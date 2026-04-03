@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 
 const releases = [
   {
@@ -78,6 +79,26 @@ const statCards = [
 ];
 
 export default function Dashboard() {
+  const { user, openAuth } = useAuth();
+
+  if (!user) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <Navbar />
+        <div className="text-center glass rounded-3xl p-12 max-w-md">
+          <div className="w-16 h-16 rounded-2xl bg-[#00FF87]/15 flex items-center justify-center mx-auto mb-6">
+            <Icon name="Lock" size={32} className="text-[#00FF87]" />
+          </div>
+          <h2 className="font-oswald text-2xl font-bold text-white mb-2">ВОЙДИТЕ В АККАУНТ</h2>
+          <p className="font-golos text-white/50 mb-6">Для доступа к личному кабинету необходима авторизация</p>
+          <button onClick={() => openAuth("login")} className="neon-btn px-8 py-3 rounded-xl font-golos font-bold">
+            Войти
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
@@ -89,7 +110,7 @@ export default function Dashboard() {
             <h1 className="font-oswald text-3xl md:text-4xl font-bold text-white">
               ЛИЧНЫЙ <span className="gradient-text">КАБИНЕТ</span>
             </h1>
-            <p className="font-golos text-white/40 mt-1">Привет, Артист 👋</p>
+            <p className="font-golos text-white/40 mt-1">Привет, {user.artist_name || user.name} 👋</p>
           </div>
           <Link to="/upload">
             <button className="neon-btn px-5 py-3 rounded-xl font-golos font-semibold text-sm flex items-center gap-2">

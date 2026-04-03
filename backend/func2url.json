@@ -1,0 +1,5 @@
+{
+  "auth-register": "https://functions.poehali.dev/a1367990-7ee7-4e01-9b38-36ad541de3af",
+  "auth-me": "https://functions.poehali.dev/f66a1c42-5aad-4a77-98c7-f313a0b06c17",
+  "auth-login": "https://functions.poehali.dev/ac32bc21-d81a-4435-8f35-2ec1920fd03f"
+}

@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Register new user",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "email": "test_artist@sounddrop.ru",
+        "password": "test1234",
+        "name": "Test Artist",
+        "artist_name": "DJ Test"
+      },
+      "expectedStatus": 200,
+      "expectedBody": { "token": "string" },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
