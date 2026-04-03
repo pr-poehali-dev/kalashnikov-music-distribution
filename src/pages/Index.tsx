@@ -199,9 +199,9 @@ export default function Index() {
       {/* Footer */}
       <footer className="border-t border-white/5 py-8 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <span className="font-oswald text-lg font-bold">
-          SOUND<span className="neon-text-green">DROP</span>
+          KALASHNIKOV <span className="neon-text-green">DIST</span>
         </span>
-        <p className="font-golos text-sm text-white/30">© 2026 SoundDrop. Все права защищены.</p>
+        <p className="font-golos text-sm text-white/30">© 2026 Kalashnikov Distribution. Все права защищены.</p>
         <div className="flex gap-6">
           {["Политика", "Оферта", "Поддержка"].map((t) => (
             <button key={t} className="font-golos text-sm text-white/40 hover:text-white/70 transition-colors">{t}</button>

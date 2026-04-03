@@ -24,7 +24,7 @@ export default function Navbar() {
             <Icon name="Music2" size={16} />
           </div>
           <span className="font-oswald text-xl font-bold tracking-wider text-white">
-            SOUND<span className="neon-text-green">DROP</span>
+            KALASHNIKOV <span className="neon-text-green">DIST</span>
           </span>
         </Link>
 

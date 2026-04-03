@@ -5,14 +5,14 @@ const contacts = [
   {
     icon: "Mail",
     label: "Email",
-    value: "support@sounddrop.ru",
+    value: "support@kalashnikov.ru",
     sub: "Отвечаем в течение 4 часов",
     color: "#00C2FF",
   },
   {
     icon: "MessageCircle",
     label: "Telegram",
-    value: "@sounddrop_support",
+    value: "@kalashnikov_dist",
     sub: "Быстрые ответы 24/7",
     color: "#00FF87",
   },

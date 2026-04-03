@@ -71,7 +71,7 @@ export default function AuthModal() {
               <Icon name="Music2" size={14} />
             </div>
             <span className="font-oswald text-lg font-bold text-white">
-              SOUND<span className="neon-text-green">DROP</span>
+              KALASHNIKOV <span className="neon-text-green">DIST</span>
             </span>
           </div>
           <h2 className="font-oswald text-2xl font-bold text-white">
